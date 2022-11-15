@@ -25,7 +25,7 @@ function SalesCard() {
           <DatePicker
             locale="pt-BR"
             selected={minDate}
-            onChange={(date: Date) => { }}
+            onChange={(date: Date) => setMinDate(date)}
             className="dsmeta-form-control"
             dateFormat="dd/MM/yyyy"
           />
@@ -34,7 +34,7 @@ function SalesCard() {
           <DatePicker
             locale="pt-BR"
             selected={maxDate}
-            onChange={(date: Date) => { }}
+            onChange={(date: Date) => setMaxDate(date)}
             className="dsmeta-form-control"
             dateFormat="dd/MM/yyyy"
           />
