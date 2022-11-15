@@ -1,16 +1,43 @@
+import { registerLocale, setDefaultLocale } from "react-datepicker";
+import pt from 'date-fns/locale/pt';
+registerLocale('pt-BR', pt)
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton'
 import './style.css'
+import { useState } from "react";
 
 function SalesCard() {
+
+  const min = new Date(new Date().setDate(new Date().getDate() - 365));
+
+  const [minDate, setMinDate] = useState (min);
+  const [maxDate, setMaxDate] = useState (new Date());//pega data atual do sistema
+  //também poderia ser assim:  const max = new Date(); ....useState (max);
+
+
   return (
     <div className="dsmeta-card">
       <h2 className="dsmeta-sales-title">Vendas</h2>
       <div>
         <div className="dsmeta-form-control-container">
-          <input className="dsmeta-form-control" type="text" />
+          <DatePicker
+            locale="pt-BR"
+            selected={minDate}
+            onChange={(date: Date) => { }}
+            className="dsmeta-form-control"
+            dateFormat="dd/MM/yyyy"
+          />
         </div>
         <div className="dsmeta-form-control-container">
-          <input className="dsmeta-form-control" type="text" />
+          <DatePicker
+            locale="pt-BR"
+            selected={maxDate}
+            onChange={(date: Date) => { }}
+            className="dsmeta-form-control"
+            dateFormat="dd/MM/yyyy"
+          />
         </div>
       </div>
 
@@ -37,7 +64,7 @@ function SalesCard() {
               <td>R$ 55300.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
-                  <NotificationButton/>
+                  <NotificationButton />
                 </div>
               </td>
             </tr>
@@ -50,7 +77,7 @@ function SalesCard() {
               <td>R$ 55300.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
-                <NotificationButton/>
+                  <NotificationButton />
                 </div>
               </td>
             </tr>
@@ -63,7 +90,7 @@ function SalesCard() {
               <td>R$ 55300.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
-                <NotificationButton/>
+                  <NotificationButton />
                 </div>
               </td>
             </tr>
