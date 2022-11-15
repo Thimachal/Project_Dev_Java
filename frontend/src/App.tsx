@@ -5,6 +5,8 @@ function App() {
     <>
     <h1>Olá Thimachal programador Java</h1>
     <NotificationButton/>
+    
+    <NotificationButton/>
     </>
   )
 }
