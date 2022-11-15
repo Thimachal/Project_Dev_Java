@@ -4,4 +4,4 @@ function notificationButton() {
     )
   }
   
-  export default App
+  export default notificationButton
