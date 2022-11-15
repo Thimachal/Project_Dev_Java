@@ -1,6 +1,6 @@
 function NotificationButton() {
     return(
-      <h1>Button para notificar</h1>
+      <p>Button para notificar</p>
     )
   }
   
