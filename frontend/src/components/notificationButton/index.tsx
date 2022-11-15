@@ -1,7 +1,7 @@
-function notificationButton() {
+function NotificationButton() {
     return(
-      <p>Button para notificar</p>
+      <h1>Button para notificar</h1>
     )
   }
   
-  export default notificationButton
+  export default NotificationButton
