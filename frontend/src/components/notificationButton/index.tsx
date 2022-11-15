@@ -1,6 +1,6 @@
 function notificationButton() {
     return(
-      <h1>Olá Thimachal programador Java</h1>
+      <p>Button para notificar</p>
     )
   }
   
