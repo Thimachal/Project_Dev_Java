@@ -1,10 +1,12 @@
+import icon from '../../assets/img/notification-icon.svg'
+
+
 function NotificationButton() {
-    return(
-    <>
-      <h2>Button para notificar meu componente</h2>
-      <h3>Uhuuuu</h3>
-      </>
+    return (
+        <div className="dsmeta-red-btn">
+            <img src={icon} alt="Notificar" />
+        </div>
     )
-  }
-  
-  export default NotificationButton
+}
+
+export default NotificationButton
