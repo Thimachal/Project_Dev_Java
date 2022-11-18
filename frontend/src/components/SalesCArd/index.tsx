@@ -1,11 +1,11 @@
 import { registerLocale, setDefaultLocale } from "react-datepicker";
 import pt from 'date-fns/locale/pt';
-registerLocale('pt-BR', pt)
+registerLocale('pt-BR', pt);
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import NotificationButton from '../NotificationButton'
-import './style.css'
+import NotificationButton from '../NotificationButton';
+import './style.css';
 import { useState } from "react";
 
 function SalesCard() {
@@ -56,12 +56,12 @@ function SalesCard() {
           </thead>
           <tbody>
             <tr>
-              <td className="show992">#341</td>
-              <td className="show576">08/07/2022</td>
-              <td>Anakin</td>
+              <td className="show992">#001</td>
+              <td className="show576">10/10/2022</td>
+              <td>Thima</td>
+              <td className="show992">30</td>
               <td className="show992">15</td>
-              <td className="show992">11</td>
-              <td>R$ 55300.00</td>
+              <td>R$ 6800.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton />
@@ -69,12 +69,12 @@ function SalesCard() {
               </td>
             </tr>
             <tr>
-              <td className="show992">#341</td>
-              <td className="show576">08/07/2022</td>
-              <td>Anakin</td>
-              <td className="show992">15</td>
-              <td className="show992">11</td>
-              <td>R$ 55300.00</td>
+              <td className="show992">#002</td>
+              <td className="show576">09/09/2022</td>
+              <td>Gabriel Barbosa (Gabigol)</td>
+              <td className="show992">10</td>
+              <td className="show992">09</td>
+              <td>R$ 9090.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton />
@@ -82,12 +82,12 @@ function SalesCard() {
               </td>
             </tr>
             <tr>
-              <td className="show992">#341</td>
-              <td className="show576">08/07/2022</td>
-              <td>Anakin</td>
-              <td className="show992">15</td>
-              <td className="show992">11</td>
-              <td>R$ 55300.00</td>
+              <td className="show992">#003</td>
+              <td className="show576">14/01/2022</td>
+              <td>Arrascaeta</td>
+              <td className="show992">14</td>
+              <td className="show992">10</td>
+              <td>R$ 1400.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton />
@@ -104,4 +104,4 @@ function SalesCard() {
   )
 }
 
-export default SalesCard
+export default SalesCard;
