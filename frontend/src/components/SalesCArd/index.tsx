@@ -57,7 +57,7 @@ function SalesCard() {
           <tbody>
             <tr>
               <td className="show992">#001</td>
-              <td className="show576">10/10/2022</td>
+              <td className="show576">01/10/2022</td>
               <td>Thima</td>
               <td className="show992">30</td>
               <td className="show992">15</td>
