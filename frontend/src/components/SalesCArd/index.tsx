@@ -87,7 +87,7 @@ function SalesCard() {
               <td>Arrascaeta</td>
               <td className="show992">14</td>
               <td className="show992">10</td>
-              <td>R$ 1414.00</td>
+              <td>R$ 1490.00</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton />
