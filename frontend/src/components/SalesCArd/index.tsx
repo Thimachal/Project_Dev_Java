@@ -74,7 +74,7 @@ function SalesCard() {
               <td>Gabriel Barbosa (Gabigol)</td>
               <td className="show992">10</td>
               <td className="show992">09</td>
-              <td>R$ 9022.00</td>
+              <td>R$ 9022.49</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton />
